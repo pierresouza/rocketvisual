@@ -26,6 +26,5 @@ export default function RootLayout({
     </html>
   );
 }
-
 export const dynamic = "force-dynamic"; // This is to ensure the layout is dynamic and not cached
 export const revalidate = 0; // This is to ensure the layout is not cached and always fresh
