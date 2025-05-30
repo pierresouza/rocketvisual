@@ -6,7 +6,9 @@ const Header = () => {
     <header>
       <nav className="flex w-full border-b border-gray-200 justify-center items-center gap-4">
         <div className="flex justify-center items-center">
-        <Image src="/logo.png" alt="Logo" width={90} height={90} />
+        <Link href="/">
+          <Image  src="/logo.png" alt="Logo da Rocket Visuals" width={87} height={87}  />
+        </Link>
         </div>
         <ul className="flex space-x-4 py-4 text-lg">
           <li>
