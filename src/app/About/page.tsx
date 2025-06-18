@@ -31,7 +31,7 @@ const Contact = () => {
           </Link>
         </div>
         <div>
-          <div className="flex flex-col md:flex-row items-center justify-center min-h-screen gap-8 px-4 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 py-8">
             <Image
               className="border rounded-xl hover:scale-105 transition-transform duration-300 md:w-[400px] object-fill"
               src="/gustavo.jpeg"
@@ -51,6 +51,15 @@ const Contact = () => {
                 Se você está buscando um parceiro para criar conteúdo visual impactante, estou pronto para fazer acontecer. Vamos decolar juntos e levar sua comunicação a outro nível!
               </p>
             </div>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-4 px-4 py-8  rounded-lg max-w-4xl mx-auto mt-8">
+            <h2 className="text-3xl font-bold w-full text-center text-white">Entre em Contato</h2>
+            <p className="text-white">
+              Se você está pronto para transformar suas ideias em realidade, entre em contato conosco!
+            </p>
+            <Link className="text-sm underline text-orange-500" href="/Contact">
+              Fale Conosco
+            </Link>
           </div>
         </div>
       </div>

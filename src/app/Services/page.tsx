@@ -4,48 +4,47 @@ import { Video, Palette, Zap, Camera } from 'lucide-react'
 const Services = () => {
     const services = [
         {
-            icon: Video,
-            title: 'Video Editing',
+            icon: Camera,
+            title: 'Produção de Vídeo',
             description:
-                'Professional video editing with seamless transitions, perfect timing, and storytelling excellence.',
+                'Planejamento estratégico de conteúdo e orientação de edição para maximizar engajamento e impacto.',
             features: [
-                'Multi-cam editing',
-                'Narrative structure',
-                'Pacing optimization',
+                'Planejamento de conteúdo',
+                'Otimização de engajamento',
+                'Alinhamento de marca',
+            ],
+        },
+        {
+            icon: Video,
+            title: 'Edição de Vídeo',
+            description:
+                'Edição de vídeo profissional com transições suaves, timing perfeito e excelência em narrativa.',
+            features: [
+                'Edição multi-câmera',
+                'Estrutura narrativa',
+                'Otimização de ritmo',
             ],
         },
         {
             icon: Palette,
-            title: 'Color Grading',
+            title: 'Colorização',
             description:
-                'Transform your footage with cinematic color grading that enhances mood and visual appeal.',
+                'Transforme seu vídeo com colorização cinematográfica que realça o clima e o apelo visual.',
             features: [
-                'Cinematic looks',
-                'Color correction',
-                'Mood enhancement',
+                'Looks cinematográficos',
+                'Correção de cor',
+                'Realce de atmosfera',
             ],
         },
         {
             icon: Zap,
             title: 'Motion Graphics',
             description:
-                'Eye-catching animations, titles, and visual effects that make your content stand out.',
+                'Animações, títulos e efeitos visuais marcantes que fazem seu conteúdo se destacar.',
             features: [
-                '2D animation',
-                '3D animation',
-                'Title design',
-                'Visual effects',
-            ],
-        },
-        {
-            icon: Camera,
-            title: 'Content Strategy',
-            description:
-                'Strategic content planning and editing guidance to maximize engagement and impact.',
-            features: [
-                'Content planning',
-                'Engagement optimization',
-                'Brand alignment',
+                'Animação 2D',
+                'Animação 3D',
+                'Efeitos visuais',
             ],
         },
     ]
@@ -55,15 +54,13 @@ const Services = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-bold text-gray-600 mb-6">
-                        Professional{' '}
+                        Serviços{' '}
                         <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            Services
+                            Profissionais
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive video editing services tailored to bring
-                        your creative vision to life with professional
-                        excellence.
+                        Serviços de edição de vídeo abrangentes, adaptados para dar vida à sua visão criativa com excelência profissional.
                     </p>
                 </div>
 
@@ -79,12 +76,12 @@ const Services = () => {
                                     <div className="mx-auto mb-4 p-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                         <IconComponent className="h-8 w-8 text-white" />
                                     </div>
-                                    <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
+                                    <CardTitle className="text-2xl font-bold text-gray-500 group-hover:text-purple-600 transition-colors">
                                         {service.title}
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-gray-600 mb-6 leading-relaxed">
+                                    <p className="text-white mb-6 leading-relaxed">
                                         {service.description}
                                     </p>
                                     <ul className="space-y-2 mb-6">
@@ -92,7 +89,7 @@ const Services = () => {
                                             (feature, featureIndex) => (
                                                 <li
                                                     key={featureIndex}
-                                                    className="text-sm text-gray-500 flex items-center justify-center"
+                                                    className="text-sm text-white flex items-center justify-center"
                                                 >
                                                     <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-2"></span>
                                                     {feature}

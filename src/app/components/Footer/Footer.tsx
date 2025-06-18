@@ -91,11 +91,11 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-purple-400" />
-                <span className="text-gray-400">hello@rocketvisuals.com</span>
+                <span className="text-gray-400">rocketvisual.vfx@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-purple-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+55 (11) 93018-8184</span>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 VideoPro. All rights reserved. Crafted with passion for visual storytelling.
+            © 2025 Rocket Visuals. Todos os direitos reservados.
           </p>
         </div>
       </div>
