@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/page";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} antialiased`}
       >
+        <Analytics />
         <Header />
         {children}
         <Footer />
