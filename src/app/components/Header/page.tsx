@@ -4,13 +4,13 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header>
-      <nav className="flex w-full border-b border-gray-200 justify-center items-center bg-transparent/90 gap-4">
+      <nav className="flex  w-full border-b border-gray-200 justify-center items-center bg-black text-white gap-4">
         <div className="flex justify-center items-center">
-        <Link href="/">
-          <Image  src="/logo.png" alt="Logo da Rocket Visuals" width={87} height={87}  />
+        <Link href="/" className="flex items-center mt-2" >
+          <Image  src="/logo.png" alt="Logo da Rocket Visuals" width={100} height={100}  />
         </Link>
         </div>
-        <ul className="flex space-x-4 py-4 text-lg">
+        <ul className="flex space-x-4 py-4 text-[20px]">
           <li>
             <Link href="/">Inicio</Link>
           </li>
