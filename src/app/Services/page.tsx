@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Video, Palette, Zap, Camera } from 'lucide-react'
 
 const Services = () => {
@@ -41,11 +41,7 @@ const Services = () => {
             title: 'Motion Graphics',
             description:
                 'Animações, títulos e efeitos visuais marcantes que fazem seu conteúdo se destacar.',
-            features: [
-                'Animação 2D',
-                'Animação 3D',
-                'Efeitos visuais',
-            ],
+            features: ['Animação 2D', 'Animação 3D', 'Efeitos visuais'],
         },
     ]
 
@@ -60,7 +56,9 @@ const Services = () => {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Serviços de edição de vídeo abrangentes, adaptados para dar vida à sua visão criativa com excelência profissional.
+                        Serviços de edição de vídeo abrangentes, adaptados para
+                        dar vida à sua visão criativa com excelência
+                        profissional.
                     </p>
                 </div>
 
