@@ -48,14 +48,20 @@ const Header = () => {
                 <div className="flex items-center justify-between w-full max-w-6xl px-4 py-2">
                     <Link href="/" className="flex items-center">
                         <Image
-                            src="/logo.png"
+                            src="/LOGO FOGUETE BRANCO.png"
                             alt="Logo da Rocket Visuals"
                             width={80}
                             height={80}
                         />
+                        <Image
+                            src="/LOGO BRANCO NOME ROCKET.png"
+                            alt="Logo da Rocket Visuals"
+                            width={150}
+                            height={150}
+                        />
                     </Link>
                 </div>
-                <ul className="hidden lg:flex flex-col items-center md:flex-row w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4 py-2 md:py-4 text-[18px] items-center md:items-start whitespace-nowrap gap-2">
+                <ul className="hidden lg:flex flex-col items-center md:flex-row w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4 py-2 md:py-4 text-[18px] md:items-start whitespace-nowrap gap-2">
                     {[
                         { href: '/', label: 'Inicio' },
                         { href: '/About', label: 'Sobre nós' },

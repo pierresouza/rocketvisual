@@ -1,82 +1,23 @@
 import { Card, CardContent } from '../components/ui/card'
 import { Badge } from '../components/ui/badge'
 import { Play, ExternalLink } from 'lucide-react'
-import ADSCampanha from '../../../public/ads-campanha.jpg'
-import EfeitoVisual from '../../../public/efeito-visual.jpg'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import projects from './mockProjects'
 
 const Portfolio = () => {
-    const projects = [
-        {
-            id: 1,
-            title: 'Campanhas de ADS',
-            category: 'VFX estratégico para campanhas de vendas.',
-            thumbnail: ADSCampanha,
-            link: '',
-        },
-        {
-            id: 2,
-            title: 'Efeitos visuais para anúncio de produtos',
-            category:
-                'Anúncio de produtos para @marotenenergy com efeitos visuais VFX.',
-            thumbnail: EfeitoVisual,
-            link: '',
-        },
-        {
-            id: 3,
-            title: 'Edição dinâmica para Reels',
-            category:
-                'Pensada para gerar engajamento, retenção e visualização.',
-            thumbnail: '',
-            link: '',
-        },
-        {
-            id: 4,
-            title: 'Transições cinematográficas',
-            category:
-                'Divulgação de cursos de envelopamento da Imprimax Tec com transições cinematográficas.',
-            thumbnail: '',
-            link: '',
-        },
-        {
-            id: 5,
-            title: 'VFX para instruções técnicas.',
-            category:
-                'Vídeo com as principais instruções técnicas. Com elementos de Motion Design e VFX para divulgação de produtos.',
-            thumbnail: '',
-            link: '',
-        },
-        {
-            id: 6,
-            title: 'VFX em vídeo institucional',
-            category:
-                'Vídeo institucional realizado para divulgação do novo centro de treinamento Imprimax Tec.',
-            thumbnail: '',
-            link: '',
-        },
-        {
-            id: 7,
-            title: 'EVENTO AUTOMOTIVO E DIVULGAÇÃO DE MARCA',
-            category:
-                'Projeto de divulgação da marca Dixie Cult e sua presença no evento Velozes Experience.',
-            thumbnail: '',
-            link: '',
-        },
-    ]
-
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-black backdrop-blur-lg">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-5xl font-bold text-gray-500 mb-6">
                         Destaques do{' '}
                         <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                             Portfólio
                         </span>
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
                         Uma vitrine dos meus melhores trabalhos em diferentes
                         gêneros e estilos. Cada projeto conta uma história
                         única.
@@ -87,7 +28,7 @@ const Portfolio = () => {
                     {projects.map((project) => (
                         <Card
                             key={project.id}
-                            className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg"
+                            className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-700 bg-black shadow-lg"
                         >
                             <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
                                 {project.thumbnail ? (
@@ -100,7 +41,6 @@ const Portfolio = () => {
                                     />
                                 ) : (
                                     <div className="flex items-center justify-center w-full h-full text-gray-400 text-6xl">
-                                        {/* Placeholder para projetos sem imagem */}
                                         <span>?</span>
                                     </div>
                                 )}
@@ -135,7 +75,7 @@ const Portfolio = () => {
                                     >
                                         {project.title}
                                     </Badge>
-                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
+                                    <h3 className="text-xl font-bold text-white group-hover:text-purple-600 transition-colors">
                                         {project.category}
                                     </h3>
                                 </div>
