@@ -2,8 +2,10 @@ import { Card, CardContent } from '../components/ui/card'
 import { Badge } from '../components/ui/badge'
 import { Play, ExternalLink } from 'lucide-react'
 import ADSCampanha from '../../../public/ads-campanha.jpg'
+import EfeitoVisual from '../../../public/efeito-visual.jpg'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Portfolio = () => {
     const projects = [
@@ -12,15 +14,15 @@ const Portfolio = () => {
             title: 'Campanhas de ADS',
             category: 'VFX estratégico para campanhas de vendas.',
             thumbnail: ADSCampanha,
-            duration: '',
+            link: '',
         },
         {
             id: 2,
             title: 'Efeitos visuais para anúncio de produtos',
             category:
                 'Anúncio de produtos para @marotenenergy com efeitos visuais VFX.',
-            thumbnail: '../../../public/efeitos-visuais.jpg',
-            duration: '',
+            thumbnail: EfeitoVisual,
+            link: '',
         },
         {
             id: 3,
@@ -28,7 +30,7 @@ const Portfolio = () => {
             category:
                 'Pensada para gerar engajamento, retenção e visualização.',
             thumbnail: '',
-            duration: '',
+            link: '',
         },
         {
             id: 4,
@@ -36,7 +38,7 @@ const Portfolio = () => {
             category:
                 'Divulgação de cursos de envelopamento da Imprimax Tec com transições cinematográficas.',
             thumbnail: '',
-            duration: '',
+            link: '',
         },
         {
             id: 5,
@@ -44,7 +46,7 @@ const Portfolio = () => {
             category:
                 'Vídeo com as principais instruções técnicas. Com elementos de Motion Design e VFX para divulgação de produtos.',
             thumbnail: '',
-            duration: '',
+            link: '',
         },
         {
             id: 6,
@@ -52,7 +54,7 @@ const Portfolio = () => {
             category:
                 'Vídeo institucional realizado para divulgação do novo centro de treinamento Imprimax Tec.',
             thumbnail: '',
-            duration: '',
+            link: '',
         },
         {
             id: 7,
@@ -60,7 +62,7 @@ const Portfolio = () => {
             category:
                 'Projeto de divulgação da marca Dixie Cult e sua presença no evento Velozes Experience.',
             thumbnail: '',
-            duration: '',
+            link: '',
         },
     ]
 
@@ -87,20 +89,24 @@ const Portfolio = () => {
                             key={project.id}
                             className="group overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg"
                         >
-                            <div className="relative overflow-hidden">
-                                <Image
-                                    src={project.thumbnail}
-                                    alt={project.title}
-                                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                                    width={400}
-                                    height={300}
-                                />
+                            <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                {project.thumbnail ? (
+                                    <Image
+                                        src={project.thumbnail}
+                                        alt={project.title}
+                                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 400px"
+                                    />
+                                ) : (
+                                    <div className="flex items-center justify-center w-full h-full text-gray-400 text-6xl">
+                                        {/* Placeholder para projetos sem imagem */}
+                                        <span>?</span>
+                                    </div>
+                                )}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-4 left-4 right-4">
                                         <div className="flex items-center justify-between">
-                                            <span className="text-white font-semibold">
-                                                {project.duration}
-                                            </span>
                                             <div className="flex gap-2">
                                                 <button
                                                     className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
@@ -112,7 +118,9 @@ const Portfolio = () => {
                                                     className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
                                                     title="Ver detalhes"
                                                 >
-                                                    <ExternalLink className="h-4 w-4 text-white" />
+                                                    <Link href={project.link}>
+                                                        <ExternalLink className="h-4 w-4 text-white" />
+                                                    </Link>
                                                 </button>
                                             </div>
                                         </div>

@@ -12,12 +12,11 @@ const Home = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
             </div>
 
-            <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col items-center text-center">
+            <div className="relative z-10 container mx-auto px-6 py-16 flex flex-col items-center text-center">
                 <div className="mb-8">
                     <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
-                        Criativo
                         <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent block">
-                            Editor de Vídeo
+                            Gustavo Rodrigues
                         </span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -30,7 +29,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-6 mb-16">
                     <Button
                         size="lg"
-                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
                     >
                         <Play className="mr-2 h-5 w-5" />
                         Assistir Reel
@@ -38,9 +37,9 @@ const Home = () => {
                     <Button
                         variant="outline"
                         size="lg"
-                        className="border-white/30 text-black hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
+                        className="border-white/30 text-black hover:scale-105 transform transition-all duration-300 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm cursor-pointer"
                     >
-                        <Link href="/portfolio">Ver Portfólio</Link>
+                        <Link href="/Portfolio">Ver Portfólio</Link>
                     </Button>
                 </div>
 
