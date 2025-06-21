@@ -6,14 +6,13 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu'
 
 const Header = () => {
     return (
-        <header className="bg-black text-white shadow-lg flex flex-row-reverse items-center justify-between px-4 py-2 border-b border-gray-200">
+        <header className="bg-black text-white shadow-lg flex flex-row-reverse items-center justify-between px-30 py-2 border-b border-gray-200">
             <div className="lg:hidden">
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -25,20 +24,22 @@ const Header = () => {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                        <DropdownMenuLabel>Menu</DropdownMenuLabel>
-                        <DropdownMenuSeparator />
                         <DropdownMenuItem asChild>
                             <Link href="/">Página Inicial</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/projects">Projetos</Link>
+                            <Link href="/About">Sobre nós</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/about">Sobre</Link>
+                            <Link href="/Portfolio">Portfólio</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/experience">Experiência</Link>
+                            <Link href="/Services">Serviços</Link>
                         </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link href="/Contact">Contato</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
@@ -60,6 +61,9 @@ const Header = () => {
                     </li>
                     <li>
                         <Link href="/About">Sobre nós</Link>
+                    </li>
+                    <li>
+                        <Link href="/Portfolio">Portfólio</Link>
                     </li>
                     <li>
                         <Link href="/Services">Serviços</Link>
