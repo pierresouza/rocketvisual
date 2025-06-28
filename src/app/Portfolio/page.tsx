@@ -3,6 +3,7 @@ import { Badge } from '../components/ui/badge'
 import Image from 'next/image'
 import Link from 'next/link'
 import projects from './mockProjects'
+import { Button } from '../components/ui/button'
 
 const Portfolio = () => {
     return (
@@ -30,15 +31,18 @@ const Portfolio = () => {
                         >
                             <div className="relative overflow-hidden aspect-square bg-gray-100">
                                 {project.thumbnail ? (
-                                    <Image
-                                        src={project.thumbnail}
-                                        alt={project.title}
-                                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 400px"
-                                        quality={100}
-                                        priority
-                                    />
+                                    <div className="overflow-hidden">
+                                        <Image
+                                            src={project.thumbnail}
+                                            alt={project.title}
+                                            className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                                            width={500}
+                                            height={300}
+                                            sizes="(max-width: 768px) 100vw, 400px"
+                                            quality={100}
+                                            priority
+                                        />
+                                    </div>
                                 ) : (
                                     <div className="flex items-center justify-center w-full h-full text-gray-400 text-6xl">
                                         <span>?</span>
@@ -58,7 +62,9 @@ const Portfolio = () => {
                                     </h3>
                                     <span className="text-white mt-8 flex max-w-[150px] hover:text-purple-600 transition-colors font-bold duration-300">
                                         <Link href="/Contact">
-                                            Pergunte-nos
+                                            <Button className=" cursor-pointer bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                                                Pergunte-nos
+                                            </Button>
                                         </Link>
                                     </span>
                                 </div>

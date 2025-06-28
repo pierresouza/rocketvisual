@@ -24,7 +24,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className="lg:flex-1 lg:flex lg:justify-center">
-                    <ul className="hidden lg:flex items-center space-x-4 text-lg font-semibold">
+                    <ul className="hidden lg:flex items-center space-x-4 text-2xl font-semibold">
                         {[
                             { href: '/', label: 'Inicio' },
                             { href: '/About', label: 'Sobre nós' },
