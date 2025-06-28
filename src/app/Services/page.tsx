@@ -10,13 +10,13 @@ const Services = () => {
         <section className="py-20 bg-black">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold text-gray-600 mb-6">
+                    <h2 className="text-5xl font-bold text-white mb-6">
                         Serviços{' '}
                         <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                             Profissionais
                         </span>
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-xl text-white max-w-3xl mx-auto">
                         Serviços de edição de vídeo abrangentes, adaptados para
                         dar vida à sua visão criativa com excelência
                         profissional.

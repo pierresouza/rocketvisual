@@ -1,11 +1,11 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from './components/ui/button'
 import { Play, Award, Users, Video } from 'lucide-react'
 
 const Home = () => {
     return (
         <section className="relative min-h-screen bg-black overflow-hidden">
-            {/* Elementos de fundo animados */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -14,15 +14,19 @@ const Home = () => {
 
             <div className="relative z-10 container mx-auto px-6 py-16 flex flex-col items-center text-center">
                 <div className="mb-8">
-                    <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
-                        <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent block">
-                            Gustavo Rodrigues
-                        </span>
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                        Transformando ideias em histórias visuais
-                        impressionantes. Edição de vídeo profissional que traz
-                        sua visão à vida com excelência cinematográfica.
+                    <div className="flex items-center justify-center mb-8">
+                        <Image
+                            src="/logo.png"
+                            alt="Logo rocket visual"
+                            width={600}
+                            height={600}
+                        />
+                    </div>
+                    <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
+                        Mais do que vídeos bonitos, criamos experiências visuais
+                        que conectam. A Rocket Visuals transforma sua visão em
+                        conteúdo com alma, estratégia e excelência
+                        cinematográfica.
                     </p>
                 </div>
 
