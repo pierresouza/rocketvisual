@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
             </div>
 
-            <div className="relative z-10 container mx-auto px-6 py-16 flex flex-col items-center text-center">
+            <div className="relative z-10 container mx-auto h-screen px-6 py-16 flex flex-col items-center justify-center text-center">
                 <div className="mb-8">
                     <div className="flex items-center justify-center mb-8">
                         <Image
@@ -36,7 +36,12 @@ const Home = () => {
                         className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
                     >
                         <Play className="mr-2 h-5 w-5" />
-                        Assistir Reel
+                        <Link
+                            href="https://www.instagram.com/p/DCRGXhUAcHD/"
+                            target="_blank"
+                        >
+                            Assistir Reel
+                        </Link>
                     </Button>
                     <Button
                         variant="outline"

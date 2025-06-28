@@ -22,10 +22,11 @@ const Footer = () => {
     ]
 
     const quickLinks = [
-        { name: 'inicio', href: '#home' },
-        { name: 'sobre nós', href: '#about' },
-        { name: 'serviços', href: '#services' },
-        { name: 'contato', href: '#contact' },
+        { name: 'inicio', href: '/' },
+        { name: 'sobre nós', href: '/About' },
+        { name: 'serviços', href: '/Services' },
+        { name: 'contato', href: '/Contact' },
+        { name: 'portfólio', href: '/Portfolio' },
     ]
 
     const services = [

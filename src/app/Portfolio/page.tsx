@@ -53,7 +53,7 @@ const Portfolio = () => {
                                 <div className="mb-3">
                                     <Badge
                                         variant="secondary"
-                                        className="mb-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 border-0"
+                                        className="mb-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 border-0 text-2lg font-semibold "
                                     >
                                         {project.title}
                                     </Badge>
