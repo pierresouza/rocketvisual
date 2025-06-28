@@ -1,5 +1,10 @@
 import ADSCampanha from '../../../public/ads-campanha.jpg'
 import EfeitoVisual from '../../../public/efeito-visual.jpg'
+import EdicaoDinamica from '../../../public/edicao dinamica para reels.webp'
+import TransicaoCinematrografica from '../../../public/transicao cinematográfica.webp'
+import VFXTecnica from '../../../public/VFX para instrucoes tecnicas.webp'
+import VFXInstitucional from '../../../public/VFX em video institucional.webp'
+import EventoAutomotivo from '../../../public/evento automotivo.webp'
 
 const projects = [
     {
@@ -21,7 +26,7 @@ const projects = [
         id: 3,
         title: 'Edição dinâmica para Reels',
         category: 'Pensada para gerar engajamento, retenção e visualização.',
-        thumbnail: '',
+        thumbnail: EdicaoDinamica,
         link: '',
     },
     {
@@ -29,7 +34,7 @@ const projects = [
         title: 'Transições cinematográficas',
         category:
             'Divulgação de cursos de envelopamento da Imprimax Tec com transições cinematográficas.',
-        thumbnail: '',
+        thumbnail: TransicaoCinematrografica,
         link: '',
     },
     {
@@ -37,7 +42,7 @@ const projects = [
         title: 'VFX para instruções técnicas.',
         category:
             'Vídeo com as principais instruções técnicas. Com elementos de Motion Design e VFX para divulgação de produtos.',
-        thumbnail: '',
+        thumbnail: VFXTecnica,
         link: '',
     },
     {
@@ -45,15 +50,15 @@ const projects = [
         title: 'VFX em vídeo institucional',
         category:
             'Vídeo institucional realizado para divulgação do novo centro de treinamento Imprimax Tec.',
-        thumbnail: '',
+        thumbnail: VFXInstitucional,
         link: '',
     },
     {
         id: 7,
         title: 'EVENTO AUTOMOTIVO E DIVULGAÇÃO DE MARCA',
         category:
-            'Projeto de divulgação da marca Dixie Cult e sua presença no evento Velozes Experience.',
-        thumbnail: '',
+            'Projeto de divulgação da marca Difee Cult e sua presença no evento Velozes Experience.',
+        thumbnail: EventoAutomotivo,
         link: '',
     },
 ]

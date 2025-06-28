@@ -1,11 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { mockServices } from './mockServices'
 const Services = () => {
-    const services = mockServices()
-    if (!services || services.length === 0) {
-        return <div>No services available</div>
-    }
-
     return (
         <section className="py-20 bg-black">
             <div className="container mx-auto px-6">
@@ -22,9 +17,8 @@ const Services = () => {
                         profissional.
                     </p>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    {services.map((service, index) => {
+                    {mockServices().map((service, index) => {
                         const IconComponent = service.icon
                         return (
                             <Card

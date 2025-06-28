@@ -7,13 +7,12 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu'
 
 const Header = () => {
     return (
-        <header className="bg-black text-white shadow-lg border-b border-gray-200/20 px-8 py-2">
+        <header className="bg-black text-white border-b border-gray-200/20 px-8 py-2 lg:justify-center">
             <div className="flex items-center justify-between max-w-screen-2xl mx-auto">
                 <Link href="/" className="flex items-center">
                     <Image
@@ -24,7 +23,7 @@ const Header = () => {
                         className="min-w-[40px] min-h-[40px]"
                     />
                 </Link>
-                <nav className="flex-1 flex justify-center">
+                <nav className="lg:flex-1 lg:flex lg:justify-center">
                     <ul className="hidden lg:flex items-center space-x-4 text-lg font-semibold">
                         {[
                             { href: '/', label: 'Inicio' },
@@ -53,12 +52,15 @@ const Header = () => {
                             <DropdownMenuTrigger asChild>
                                 <Button
                                     size="icon"
-                                    className="border border-black transition-all duration-500 ease-in-out hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
+                                    className="border border-black transition-all duration-500 ease-in-out hover:bg-black  dark:hover:bg-white dark:hover:text-black"
                                 >
                                     <FaList className="h-5 w-5" />
                                 </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
+                            <DropdownMenuContent
+                                align="end"
+                                className="bg-black text-white"
+                            >
                                 <DropdownMenuItem asChild>
                                     <Link href="/">Página Inicial</Link>
                                 </DropdownMenuItem>
@@ -74,12 +76,11 @@ const Header = () => {
                                 <DropdownMenuItem asChild>
                                     <Link href="/Contact">Contato</Link>
                                 </DropdownMenuItem>
-                                <DropdownMenuSeparator />
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </div>
                 </nav>
-                <div className="flex flex-col items-end">
+                <div className="lg:flex flex-col items-end hidden">
                     <Image
                         src="/LOGO BRANCO NOME ROCKET.png"
                         alt="Logo da Rocket Visuals"
